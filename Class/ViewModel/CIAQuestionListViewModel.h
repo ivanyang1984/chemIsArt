@@ -7,8 +7,11 @@
 //
 
 #import "TBOBaseListViewModel.h"
+#import "CIAQuestionModel.h"
 
 @interface CIAQuestionListViewModel : TBOBaseListViewModel
+
+@property (nonatomic, strong) NSMutableArray<CIAQuestionModel> *questions;
 
 + (instancetype) initWithUserId;
 

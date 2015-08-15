@@ -16,4 +16,22 @@
     return [self initWithModelLoader:loader];
 }
 
+-(id)data:(NSIndexPath* const)indexPath {
+    return [self.questions objectAtIndex:indexPath.row];
+}
+
+-(void)onloaderCompleted:(CIAResponse*)response succeeded:(BOOL)succeeded {
+    if (succeeded) {
+        CIAResultSet* result = (CIAResultSet*)response.responseJSONModel;
+        [self beginDataChanged];
+        self.questions = result.questions;
+        [self endDataChanged];
+    }
+    [self setLoadFinished:succeeded];
+}
+
+-(NSInteger)itemCount:(NSInteger)section {
+    return [self.questions count];
+}
+
 @end

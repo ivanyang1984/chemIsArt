@@ -9,6 +9,7 @@
 #import "CIATestQuestionViewController.h"
 #import "CIAResultSet.h"
 #import "CIAQuestionListViewModel.h"
+#import "CIATestQuestionsSectionDelegate.h"
 
 @interface CIATestQuestionViewController ()
 
@@ -29,7 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.tableView.sectionDelegate = [TBOMyCommunitiesSectionDelegate initWithTableView:self.tableView model:self.viewModel];
+    self.tableView.sectionDelegate = [CIATestQuestionsSectionDelegate initWithTableView:self.tableView model:self.viewModel];
 }
 
 - (void)didReceiveMemoryWarning {

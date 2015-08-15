@@ -7,9 +7,10 @@
 //
 
 #import "TBJSONModel.h"
+#import "CIABaseResponseModel.h"
 #import "CIAQuestionModel.h"
 
-@interface CIAResultSet : TBJSONModel
+@interface CIAResultSet : CIABaseResponseModel<ITBOListModel>
 
 @property (nonatomic, strong) NSMutableArray<CIAQuestionModel> *questions;
 

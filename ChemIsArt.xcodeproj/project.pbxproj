@@ -52,6 +52,10 @@
 		3A5232551B7DD08800E01D78 /* AIFServiceGoogleMapDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A52323C1B7DD08800E01D78 /* AIFServiceGoogleMapDirections.m */; };
 		3A5232571B7DE5EC00E01D78 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5232561B7DE5EC00E01D78 /* libstdc++.dylib */; };
 		3A52325A1B7E4D9B00E01D78 /* CIATestDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5232591B7E4D9B00E01D78 /* CIATestDirection.m */; };
+		3A9800141B7F82600067068C /* CIABaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9800131B7F82600067068C /* CIABaseCell.m */; };
+		3A9800171B7F830B0067068C /* CIAQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9800161B7F830B0067068C /* CIAQuestionCell.m */; };
+		3A98001D1B7F8BBA0067068C /* TBOCellSeperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A98001C1B7F8BBA0067068C /* TBOCellSeperator.m */; };
+		3A9800201B7F8BF30067068C /* TBOUILine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A98001F1B7F8BF30067068C /* TBOUILine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +165,15 @@
 		3A5232561B7DE5EC00E01D78 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		3A5232581B7E4D9B00E01D78 /* CIATestDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIATestDirection.h; sourceTree = "<group>"; };
 		3A5232591B7E4D9B00E01D78 /* CIATestDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIATestDirection.m; sourceTree = "<group>"; };
+		3A9800121B7F82600067068C /* CIABaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIABaseCell.h; sourceTree = "<group>"; };
+		3A9800131B7F82600067068C /* CIABaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIABaseCell.m; sourceTree = "<group>"; };
+		3A9800151B7F830B0067068C /* CIAQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIAQuestionCell.h; sourceTree = "<group>"; };
+		3A9800161B7F830B0067068C /* CIAQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIAQuestionCell.m; sourceTree = "<group>"; };
+		3A9800181B7F83C50067068C /* CIAMarcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIAMarcos.h; sourceTree = "<group>"; };
+		3A98001B1B7F8BBA0067068C /* TBOCellSeperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBOCellSeperator.h; sourceTree = "<group>"; };
+		3A98001C1B7F8BBA0067068C /* TBOCellSeperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBOCellSeperator.m; sourceTree = "<group>"; };
+		3A98001E1B7F8BF30067068C /* TBOUILine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBOUILine.h; sourceTree = "<group>"; };
+		3A98001F1B7F8BF30067068C /* TBOUILine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBOUILine.m; sourceTree = "<group>"; };
 		6BF00555128702E676A49F82 /* libPods-ChemIsArt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChemIsArt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -316,6 +329,7 @@
 		3A5231991B7D8F3400E01D78 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				3A9800181B7F83C50067068C /* CIAMarcos.h */,
 			);
 			name = Util;
 			path = Class/Util;
@@ -324,6 +338,11 @@
 		3A52319A1B7D8F3400E01D78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3A98001E1B7F8BF30067068C /* TBOUILine.h */,
+				3A98001F1B7F8BF30067068C /* TBOUILine.m */,
+				3A98001B1B7F8BBA0067068C /* TBOCellSeperator.h */,
+				3A98001C1B7F8BBA0067068C /* TBOCellSeperator.m */,
+				3A9800111B7F82510067068C /* Cell */,
 				3A2D41B61B7F6D3D0020EF6D /* ITBOModel.h */,
 			);
 			name = View;
@@ -508,6 +527,17 @@
 			path = GoogleMap;
 			sourceTree = "<group>";
 		};
+		3A9800111B7F82510067068C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A9800121B7F82600067068C /* CIABaseCell.h */,
+				3A9800131B7F82600067068C /* CIABaseCell.m */,
+				3A9800151B7F830B0067068C /* CIAQuestionCell.h */,
+				3A9800161B7F830B0067068C /* CIAQuestionCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		623E8A98F1D7AD74A042233C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +698,7 @@
 				3A5232471B7DD08800E01D78 /* UIDevice+IdentifierAddition.m in Sources */,
 				3A52325A1B7E4D9B00E01D78 /* CIATestDirection.m in Sources */,
 				3A52324F1B7DD08800E01D78 /* AIFPListManager.m in Sources */,
+				3A9800171B7F830B0067068C /* CIAQuestionCell.m in Sources */,
 				3A52324A1B7DD08800E01D78 /* AIFURLResponse.m in Sources */,
 				3A4C8D771B7A14A10000F6CD /* CIATestQuestionViewController.m in Sources */,
 				3A4C8D741B7A14A10000F6CD /* AppDelegate.m in Sources */,
@@ -679,6 +710,7 @@
 				3A2D41AD1B7F662A0020EF6D /* CIAResultSet.m in Sources */,
 				3A5232411B7DD08800E01D78 /* NSArray+AXNetworkingMethods.m in Sources */,
 				3A2D41AA1B7F657D0020EF6D /* XBaseViewController.m in Sources */,
+				3A9800201B7F8BF30067068C /* TBOUILine.m in Sources */,
 				3A5232501B7DD08800E01D78 /* AIFLogger.m in Sources */,
 				3A5231F81B7D932100E01D78 /* TBOBaseRequest.m in Sources */,
 				3A2D41811B7F46B90020EF6D /* CIAQuestionModel.m in Sources */,
@@ -692,12 +724,14 @@
 				3A2D41B21B7F6CB20020EF6D /* CIATestQuestionsSectionDelegate.m in Sources */,
 				3A5232401B7DD08800E01D78 /* AIFUDIDGenerator.m in Sources */,
 				3A5232421B7DD08800E01D78 /* NSDictionary+AXNetworkingMethods.m in Sources */,
+				3A98001D1B7F8BBA0067068C /* TBOCellSeperator.m in Sources */,
 				3A52323D1B7DD08800E01D78 /* AIFCommonParamsGenerator.m in Sources */,
 				3A5231E11B7D8FDE00E01D78 /* TBOBaseDetailModel.m in Sources */,
 				3A5232491B7DD08800E01D78 /* AIFAppContext.m in Sources */,
 				3A52324D1B7DD08800E01D78 /* AIFCityListManager.m in Sources */,
 				3A5232541B7DD08800E01D78 /* AIFServiceFactory.m in Sources */,
 				3A5232451B7DD08800E01D78 /* NSString+AXNetworkingMethods.m in Sources */,
+				3A9800141B7F82600067068C /* CIABaseCell.m in Sources */,
 				3A5232441B7DD08800E01D78 /* NSObject+AXNetworkingMethods.m in Sources */,
 				3A2D41871B7F632D0020EF6D /* CIAQuestionListViewModel.m in Sources */,
 				3A5232431B7DD08800E01D78 /* NSMutableString+AXNetworkingMethods.m in Sources */,
