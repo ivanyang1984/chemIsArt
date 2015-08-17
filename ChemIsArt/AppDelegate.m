@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CIATestQuestionViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    CIATestQuestionViewController *vc = [[CIATestQuestionViewController alloc] init];
+    //! 初始化导航
+    [CIARouteService setUpRoutersConfig];
+    
+    ViewController *vc = [[ViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navigationController;
     return YES;

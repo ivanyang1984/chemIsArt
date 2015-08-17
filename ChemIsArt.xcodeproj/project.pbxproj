@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1C9A2E1B8176CD0080908B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C9A2D1B8176CD0080908B /* ViewController.m */; };
+		3A1C9A321B817F3C0080908B /* CIARouteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C9A311B817F3C0080908B /* CIARouteService.m */; };
+		3A1C9A341B81830C0080908B /* routerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C9A331B81830C0080908B /* routerConfig.plist */; };
 		3A2D417E1B7F1F850020EF6D /* CIABaseResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D417D1B7F1F850020EF6D /* CIABaseResponseModel.m */; };
 		3A2D41811B7F46B90020EF6D /* CIAQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D41801B7F46B90020EF6D /* CIAQuestionModel.m */; };
 		3A2D41871B7F632D0020EF6D /* CIAQuestionListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D41861B7F632D0020EF6D /* CIAQuestionListViewModel.m */; };
@@ -56,6 +59,7 @@
 		3A9800171B7F830B0067068C /* CIAQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9800161B7F830B0067068C /* CIAQuestionCell.m */; };
 		3A98001D1B7F8BBA0067068C /* TBOCellSeperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A98001C1B7F8BBA0067068C /* TBOCellSeperator.m */; };
 		3A9800201B7F8BF30067068C /* TBOUILine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A98001F1B7F8BF30067068C /* TBOUILine.m */; };
+		81B7109611DF545F1CAFA5BC /* libPods-ChemIsArt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF00555128702E676A49F82 /* libPods-ChemIsArt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,11 @@
 /* Begin PBXFileReference section */
 		2CB2A26B971DD12F74B685F1 /* Pods-ChemIsArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemIsArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChemIsArt/Pods-ChemIsArt.release.xcconfig"; sourceTree = "<group>"; };
 		386FA247940B982B27B9D71C /* Pods-ChemIsArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemIsArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChemIsArt/Pods-ChemIsArt.debug.xcconfig"; sourceTree = "<group>"; };
+		3A1C9A2C1B8176CD0080908B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A1C9A2D1B8176CD0080908B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A1C9A301B817F3C0080908B /* CIARouteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIARouteService.h; sourceTree = "<group>"; };
+		3A1C9A311B817F3C0080908B /* CIARouteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIARouteService.m; sourceTree = "<group>"; };
+		3A1C9A331B81830C0080908B /* routerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = routerConfig.plist; sourceTree = "<group>"; };
 		3A2D417C1B7F1F850020EF6D /* CIABaseResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIABaseResponseModel.h; path = ../../ViewModel/Base/CIABaseResponseModel.h; sourceTree = "<group>"; };
 		3A2D417D1B7F1F850020EF6D /* CIABaseResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIABaseResponseModel.m; path = ../../ViewModel/Base/CIABaseResponseModel.m; sourceTree = "<group>"; };
 		3A2D417F1B7F46B90020EF6D /* CIAQuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIAQuestionModel.h; sourceTree = "<group>"; };
@@ -183,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5232571B7DE5EC00E01D78 /* libstdc++.dylib in Frameworks */,
+				81B7109611DF545F1CAFA5BC /* libPods-ChemIsArt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +206,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1C9A2F1B817F270080908B /* RouteService */ = {
+			isa = PBXGroup;
+			children = (
+				3A1C9A301B817F3C0080908B /* CIARouteService.h */,
+				3A1C9A311B817F3C0080908B /* CIARouteService.m */,
+			);
+			path = RouteService;
+			sourceTree = "<group>";
+		};
 		3A2D41981B7F657D0020EF6D /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +284,9 @@
 				3A4C8D7B1B7A14A10000F6CD /* Images.xcassets */,
 				3A5231E41B7D90E200E01D78 /* ChemIsArt-Prefix.pch */,
 				3A4C8D6E1B7A14A10000F6CD /* Supporting Files */,
+				3A1C9A2C1B8176CD0080908B /* ViewController.h */,
+				3A1C9A2D1B8176CD0080908B /* ViewController.m */,
+				3A1C9A331B81830C0080908B /* routerConfig.plist */,
 			);
 			path = ChemIsArt;
 			sourceTree = "<group>";
@@ -376,6 +398,7 @@
 		3A5231E51B7D932100E01D78 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3A1C9A2F1B817F270080908B /* RouteService */,
 				3A5231E61B7D932100E01D78 /* WebService */,
 			);
 			name = Services;
@@ -638,6 +661,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1C9A341B81830C0080908B /* routerConfig.plist in Resources */,
 				3A4C8D7C1B7A14A10000F6CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,11 +748,13 @@
 				3A2D41B21B7F6CB20020EF6D /* CIATestQuestionsSectionDelegate.m in Sources */,
 				3A5232401B7DD08800E01D78 /* AIFUDIDGenerator.m in Sources */,
 				3A5232421B7DD08800E01D78 /* NSDictionary+AXNetworkingMethods.m in Sources */,
+				3A1C9A2E1B8176CD0080908B /* ViewController.m in Sources */,
 				3A98001D1B7F8BBA0067068C /* TBOCellSeperator.m in Sources */,
 				3A52323D1B7DD08800E01D78 /* AIFCommonParamsGenerator.m in Sources */,
 				3A5231E11B7D8FDE00E01D78 /* TBOBaseDetailModel.m in Sources */,
 				3A5232491B7DD08800E01D78 /* AIFAppContext.m in Sources */,
 				3A52324D1B7DD08800E01D78 /* AIFCityListManager.m in Sources */,
+				3A1C9A321B817F3C0080908B /* CIARouteService.m in Sources */,
 				3A5232541B7DD08800E01D78 /* AIFServiceFactory.m in Sources */,
 				3A5232451B7DD08800E01D78 /* NSString+AXNetworkingMethods.m in Sources */,
 				3A9800141B7F82600067068C /* CIABaseCell.m in Sources */,

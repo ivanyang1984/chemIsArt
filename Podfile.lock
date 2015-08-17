@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - MGJRouter (0.8.0)
   - TBJSONModel (0.0.5)
   - UIStyleSheetLib (1.0.0.44):
     - UIStyleSheetLib/Framework (= 1.0.0.44)
@@ -29,11 +30,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - MGJRouter (~> 0.8.0)
   - TBJSONModel (~> 0.0.5)
   - UIStyleSheetLib (~> 1.0.0.43)
 
 SPEC CHECKSUMS:
   AFNetworking: 7624013f82548483c463e8f32179f1d53c9ac000
+  MGJRouter: 488cfded007fbc0efd039410f8dd82939b42225b
   TBJSONModel: 8a9cdf74b16e52cb0d0be5560a497e7733d13ba9
   UIStyleSheetLib: 03cfd2c79729c414fd51c95fda9c9e00b8a5b000
 

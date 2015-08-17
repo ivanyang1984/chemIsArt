@@ -18,11 +18,11 @@
 
 @implementation CIATestQuestionViewController
 
-- (instancetype)init
+- (instancetype)initNaviParams:(NSDictionary *)params 
 {
     self = [super init];
     if (self) {
-        CIAQuestionListViewModel *questionsViewModel = [CIAQuestionListViewModel initWithUserId];
+        CIAQuestionListViewModel *questionsViewModel = [CIAQuestionListViewModel initwithQueryParams:params];
         self.viewModel = questionsViewModel;
     }
     return self;

@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSMutableArray<CIAQuestionModel> *questions;
 
-+ (instancetype) initWithUserId;
+//+ (instancetype) initWithUserId:(NSString *)userId;
++(instancetype) initwithQueryParams:(NSDictionary *)params;
 
 @end

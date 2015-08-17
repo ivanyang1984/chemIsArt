@@ -11,10 +11,15 @@
 
 @implementation CIAQuestionListViewModel
 
-+ (instancetype) initWithUserId {
-    TBOStandardModelLoader* loader = TBOMakeStandardModelLoader(@"questions/1", nil, [CIAResultSet class]);
++(instancetype) initwithQueryParams:(NSDictionary *)params {
+    TBOStandardModelLoader* loader = TBOMakeStandardModelLoader(str(@"%@/%@",[params objectForKey:@"questions"],[params objectForKey:@"userId"]), nil, [CIAResultSet class]);
     return [self initWithModelLoader:loader];
 }
+
+//+ (instancetype) initWithQuery UserId:(NSString *)userId {
+//    TBOStandardModelLoader* loader = TBOMakeStandardModelLoader(@"questions/1", nil, [CIAResultSet class]);
+//    return [self initWithModelLoader:loader];
+//}
 
 -(id)data:(NSIndexPath* const)indexPath {
     return [self.questions objectAtIndex:indexPath.row];

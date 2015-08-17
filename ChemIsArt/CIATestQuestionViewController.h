@@ -12,6 +12,9 @@
 
 @interface CIATestQuestionViewController : XBaseTableViewController
 
+@property (nonatomic, strong) NSMutableDictionary *urlParams;
+
+- (instancetype)initNaviParams:(NSDictionary *)params;
 
 @end
 
